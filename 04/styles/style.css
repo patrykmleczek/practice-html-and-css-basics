@@ -1,5 +1,6 @@
 body {
     background-color: #f4f4f4;
+    font-size: 20px;
 }
 
 .menu {
@@ -15,3 +16,77 @@ body {
 
 .menu__item:hover {
     border-top: 3px solid blue;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #444;
+}
+
+.dropdown__link {
+    text-decoration: none;
+    color: white;
+}
+
+.menu__dropdown {
+    position: relative;
+}
+
+.menu__dropdown:hover::after {
+    content: ">";
+    position: absolute;
+    right: 10px;
+    transform: rotate(90deg);
+}
+
+.menu__dropdown:hover>.dropdown {
+    display: block;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: #444;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    display: none;
+}
+
+.dropdown__item {
+    padding: 10px 20px;
+}
+
+.menu__dropdown-right {
+    position: relative;
+}
+
+.menu__dropdown-right:hover::after {
+    content: ">";
+    color: white;
+    position: absolute;
+    right: 10px;
+    transform: scale(0.7);
+}
+
+.menu__dropdown-right:hover>.dropdown-right {
+    display: block;
+}
+
+.dropdown-right {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #444;
+    min-width: 220px;
+    display: none;
+
+}
+
+.dropdown-right__item {
+    padding: 10px 20px;
+}
+
+.dropdown-right__link {
+    text-decoration: none;
+    color: white;
+}
