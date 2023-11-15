@@ -1,0 +1,72 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.green {
+    width: 100%;
+    border: 5px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.blue {
+    width: 1000px;
+    border: 5px solid blue;
+    display: flex;
+    padding: 5px 0;
+}
+
+.blue--spc-btw {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blue--spc-evn {
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+}
+
+.blue--spc-cntr {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.orange--logo {
+    width: 200px;
+    height: 50px;
+    flex-basis: 20%;
+}
+
+.orange--nav {
+    width: 500px;
+    height: 50px;
+    flex-basis: 40%;
+}
+
+.orange--twin {
+    width: 49.5%;
+    height: 400px;
+}
+
+.orange--triple {
+    height: 350px;
+    width: 33.33%;
+    margin: 1%;
+}
+
+.orange--copy {
+    width: 10%;
+    height: 50px;
+    margin: 1%;
+}
